@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to InvestSmart</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Investment Plans</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Your Smart Investment Solution</h2>
+        <p>Find the best investment plans with high returns and low risks.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Investment Plans</h2>
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Interest Rate</th>
+                <th>Duration</th>
+                <th>Min. Investment</th>
+            </tr>
+            <tr>
+                <td>Fixed Deposit</td>
+                <td>3.5% p.a.</td>
+                <td>12 Months</td>
+                <td>€1,000</td>
+            </tr>
+            <tr>
+                <td>Flexible Savings</td>
+                <td>2.8% p.a.</td>
+                <td>6 Months</td>
+                <td>€500</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="calculator">
+        <h2>Investment Calculator</h2>
+        <label for="amount">Investment Amount (€):</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <label for="rate">Interest Rate (%):</label>
+        <input type="number" id="rate" placeholder="Enter rate">
+        <label for="years">Years:</label>
+        <input type="number" id="years" placeholder="Enter duration">
+        <button onclick="calculateReturns()">Calculate</button>
+        <p id="result"></p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
